@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  box-sizing: border-box;
+
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  color: #212529;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Класс для скрытия информации визуально, 
+но не для скрин-ридеров */
+
+.visually_hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
