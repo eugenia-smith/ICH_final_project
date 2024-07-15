@@ -1,13 +1,76 @@
-@import "_variables.scss";
-@import "_mixins.scss";
-
 .main_header {
   @include flex_container;
-  margin: 0 auto;
+  padding: 11px 50px;
+
   max-width: 1512px;
   min-height: 64px;
 }
 
+.header_search {
+  @include flex_container;
+  gap: 0px;
+  margin-left: 40px;
+  border: none;
+
+  .search_input {
+    @include inputs(300px, 36px);
+    border-radius: 8px 0 0 8px;
+  }
+
+  .search_container {
+    position: relative;
+
+    .search_location {
+      @include inputs(300px, 36px);
+      border-radius: 0 8px 8px 0;
+
+      &::placeholder {
+        font-size: $regular_text;
+        color: $main_black;
+      }
+    }
+
+    .search_button {
+      @include flex_container;
+      justify-content: center;
+
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 36px;
+      height: 36px;
+      border: none;
+      border-radius: 0 8px 8px 0;
+      background-color: $main_coral;
+    }
+  }
+}
+
 .header_user-menu {
-  @include;
+  @include flex_container;
+  gap: 22px;
+  margin-left: auto;
+}
+
+.user_language {
+  @include flex_container;
+  gap: 5px;
+
+  .lang_text {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.login_button {
+  border: none;
+
+  background-color: transparent;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.button {
+  @include buttons($main_teal, $main_white, 14px, 600);
 }
