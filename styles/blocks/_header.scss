@@ -1,0 +1,13 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+.main_header {
+  @include flex_container;
+  margin: 0 auto;
+  max-width: 1512px;
+  min-height: 64px;
+}
+
+.header_user-menu {
+  @include;
+}

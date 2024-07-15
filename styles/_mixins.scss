@@ -11,6 +11,12 @@
 }
 
 @mixin regular-text {
-  font-size: 16px;
+  font-size: $regular_text;
   color: $main_grey;
+}
+
+@mixin links {
+  font-size: $regular_text;
+  font-weight: 500;
+  color: $main_teal;
 }
