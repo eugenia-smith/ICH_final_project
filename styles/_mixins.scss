@@ -1,4 +1,16 @@
+@import "_variables.scss";
+
 @mixin transparent_background {
   background-color: #97cad1;
   opacity: 0.08;
+}
+
+@mixin flex_container {
+  display: flex;
+  align-items: center;
+}
+
+@mixin regular-text {
+  font-size: 16px;
+  color: $main_grey;
 }
