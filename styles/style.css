@@ -472,7 +472,7 @@ a {
 
 .events {
   max-width: 1196px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 
 .section_header {
@@ -538,6 +538,7 @@ a {
   justify-content: start;
   align-items: start;
   gap: 12px;
+  min-height: 400px;
 }
 .events_container .event_card .card_heading {
   font-size: 20px;
@@ -573,4 +574,9 @@ a {
   content: url(../../assets/icons/event_card_admission.svg);
   vertical-align: sub;
   margin-right: 6px;
+}
+
+.upcoming_events {
+  max-width: 1196px;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

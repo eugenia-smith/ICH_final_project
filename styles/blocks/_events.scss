@@ -1,6 +1,6 @@
 .events {
   max-width: $section_max-width;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 
 .section_header {
@@ -54,6 +54,8 @@
   .event_card {
     @include flex_container(column, start, start);
     gap: 12px;
+
+    min-height: 400px;
 
     .card_heading {
       font-size: 20px;
