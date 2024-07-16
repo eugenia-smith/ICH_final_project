@@ -1,0 +1,29 @@
+.categories {
+  max-width: $section_max-width;
+  margin: 0 auto;
+}
+
+.section_heading {
+  @include section_heading;
+  margin-bottom: 24px;
+}
+
+.categories_container {
+  @include flex-container(row, space-between, center);
+  flex-wrap: wrap;
+
+  a {
+    @include flex-container(column, center, center);
+    gap: 6px;
+    padding: 0 20px;
+    width: 135px;
+
+    min-height: 112px;
+    border-radius: 8px;
+
+    background-color: rgba($color: $main_light_teal, $alpha: 0.08);
+
+    text-align: center;
+    font-weight: 500;
+  }
+}
