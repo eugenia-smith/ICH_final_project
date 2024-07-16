@@ -468,4 +468,109 @@ a {
   font-size: 16px;
   font-weight: 400;
   padding: 8px 16px;
+}
+
+.events {
+  max-width: 1196px;
+  margin: 0 auto;
+}
+
+.section_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 24px;
+}
+.section_header .section_heading {
+  font-size: 28px;
+  line-height: 130%;
+  font-weight: 600;
+}
+.section_header .location_wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.section_header .events_location {
+  padding: 13px 6px 13px 17px;
+  min-width: 240px;
+  height: 44px;
+  border: 1px solid #d9d9d9;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(151, 202, 209, 0.12);
+}
+.section_header .events_location::-moz-placeholder {
+  font-size: 20px;
+  font-weight: 500;
+  color: #00798a;
+}
+.section_header .events_location::placeholder {
+  font-size: 20px;
+  font-weight: 500;
+  color: #00798a;
+}
+.section_header .edit_button {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 12px;
+  background-color: transparent;
+  border: none;
+}
+.section_header a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #00798a;
+  margin-left: auto;
+}
+
+.events_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 36px;
+}
+.events_container .event_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 12px;
+}
+.events_container .event_card .card_heading {
+  font-size: 20px;
+  font-weight: 600;
+}
+.events_container .event_card .card_topic {
+  font-size: 14px;
+  font-weight: 500;
+  color: #707070;
+}
+.events_container .event_card .card_description_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.events_container .event_card .card_description_wrapper .date {
+  width: 100%;
+}
+.events_container .event_card .card_description_wrapper .date::before {
+  content: url(../../assets/icons/event_card_calendar.svg);
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.events_container .event_card .card_description_wrapper .participants::before {
+  content: url(../../assets/icons/event_card_tick.svg);
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.events_container .event_card .card_description_wrapper .admission::before {
+  content: url(../../assets/icons/event_card_admission.svg);
+  vertical-align: sub;
+  margin-right: 6px;
 }/*# sourceMappingURL=style.css.map */

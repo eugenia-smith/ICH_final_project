@@ -1,0 +1,101 @@
+.events {
+  max-width: $section_max-width;
+  margin: 0 auto;
+}
+
+.section_header {
+  @include flex_container(row, start, center);
+  gap: 22px;
+  margin-bottom: 24px;
+
+  .section_heading {
+    @include section_heading;
+  }
+
+  .location_wrapper {
+    @include flex_container_centered;
+    position: relative;
+  }
+
+  .events_location {
+    @include inputs(240px, 44px);
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: rgba($color: $main_light_teal, $alpha: 0.12);
+
+    &::placeholder {
+      font-size: 20px;
+      font-weight: 500;
+      color: $main_teal;
+    }
+  }
+
+  .edit_button {
+    @include flex_container_centered;
+    position: absolute;
+    right: 12px;
+    background-color: transparent;
+    border: none;
+  }
+
+  a {
+    @include links;
+    margin-left: auto;
+  }
+}
+
+.events_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 36px;
+
+  .event_card {
+    @include flex_container(column, start, start);
+    gap: 12px;
+
+    .card_heading {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .card_topic {
+      font-size: 14px;
+      font-weight: 500;
+      color: $main_grey;
+    }
+
+    .card_description_wrapper {
+      @include flex_container(row, start, center);
+      gap: 16px;
+      flex-wrap: wrap;
+
+      .date {
+        width: 100%;
+
+        &::before {
+          content: url(../../assets/icons/event_card_calendar.svg);
+          vertical-align: middle;
+          margin-right: 6px;
+        }
+      }
+
+      .participants {
+        &::before {
+          content: url(../../assets/icons/event_card_tick.svg);
+          vertical-align: middle;
+          margin-right: 6px;
+        }
+      }
+
+      .admission {
+        &::before {
+          content: url(../../assets/icons/event_card_admission.svg);
+          vertical-align: sub;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}
