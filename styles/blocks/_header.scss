@@ -1,5 +1,5 @@
 .main_header {
-  @include flex_container;
+  @include flex_container_centered;
   padding: 11px 50px;
 
   max-width: 1512px;
@@ -7,7 +7,7 @@
 }
 
 .header_search {
-  @include flex_container;
+  @include flex_container_centered;
   gap: 0px;
   margin-left: 40px;
   border: none;
@@ -31,7 +31,7 @@
     }
 
     .search_button {
-      @include flex_container;
+      @include flex_container_centered;
       justify-content: center;
 
       position: absolute;
@@ -47,13 +47,13 @@
 }
 
 .header_user-menu {
-  @include flex_container;
+  @include flex_container_centered;
   gap: 22px;
   margin-left: auto;
 }
 
 .user_language {
-  @include flex_container;
+  @include flex_container_centered;
   gap: 5px;
 
   .lang_text {

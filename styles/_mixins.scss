@@ -3,9 +3,16 @@
   opacity: 0.08;
 }
 
-@mixin flex_container {
+@mixin flex_container_centered {
   display: flex;
   align-items: center;
+}
+
+@mixin flex_container($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
 
 @mixin regular-text {

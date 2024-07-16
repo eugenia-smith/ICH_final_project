@@ -1,0 +1,31 @@
+.main_banner {
+  @include flex-container_centered;
+  margin: 36px auto 24px;
+  max-width: $section_max-width;
+}
+
+.banner_info_container {
+  @include flex-container(column, start, start);
+  gap: 24px;
+
+  width: 50%;
+}
+
+.banner_slogan {
+  font-size: 42px;
+  line-height: 110%;
+  font-weight: 700;
+}
+
+.banner_description {
+  @include regular-text;
+}
+
+.banner_img {
+  margin: 0 auto;
+}
+
+.CTA_button {
+  @include buttons($main_teal, $main_white, $regular_text, 400);
+  padding: 8px 16px;
+}
