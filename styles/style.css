@@ -579,4 +579,32 @@ a {
 .upcoming_events {
   max-width: 1196px;
   margin: 0 auto;
+}
+
+.join_meetup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 64px;
+  padding: 38px 56px;
+  max-width: 1196px;
+  background-color: rgba(151, 202, 209, 0.08);
+}
+
+.join_meetup_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 16px;
+}
+.join_meetup_info .section_heading {
+  font-size: 28px;
+  line-height: 130%;
+  font-weight: 600;
+}
+.join_meetup_info .signup_button {
+  padding: 8px 64px;
+  background-color: #e32359;
 }/*# sourceMappingURL=style.css.map */

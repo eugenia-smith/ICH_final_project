@@ -1,8 +1,3 @@
-@mixin transparent_background {
-  background-color: #97cad1;
-  opacity: 0.08;
-}
-
 @mixin flex_container_centered {
   display: flex;
   align-items: center;
