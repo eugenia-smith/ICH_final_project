@@ -1,6 +1,5 @@
 .main_banner {
   @include flex-container_centered;
-  margin: 36px auto 24px;
   max-width: $section_max-width;
 }
 

@@ -1,6 +1,5 @@
 .join_meetup {
   @include flex-container(row, space-between, center);
-  margin: 0 auto 64px;
   padding: 38px 56px;
 
   max-width: $section_max-width;

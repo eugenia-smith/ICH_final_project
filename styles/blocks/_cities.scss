@@ -1,8 +1,7 @@
 .cities {
   @include flex-container(column, start, start);
   gap: 16px;
-  max-width: $section_max-width;
-  margin: 0 auto 64px;
+  width: $section_max-width;
 }
 
 .section_description {

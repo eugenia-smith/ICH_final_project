@@ -1,6 +1,5 @@
 .categories {
-  max-width: $section_max-width;
-  margin: 0 auto 64px;
+  width: $section_max-width;
 }
 
 .section_heading {
@@ -10,9 +9,9 @@
 
 .categories_container {
   @include flex-container(row, space-between, center);
-  flex-wrap: wrap;
+  width: 100%;
 
-  a {
+  .category {
     @include flex-container(column, center, center);
     gap: 6px;
     padding: 0 20px;

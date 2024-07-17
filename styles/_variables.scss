@@ -10,7 +10,12 @@ $main_light_grey: #c5c4c4;
 $main_graphite: #212121;
 $main_black: #000000;
 
+$section_bg: rgba(
+  $color: $main_light_teal,
+  $alpha: 0.08,
+);
+
 // Measures
 
-$section_max-width: 80vw;
+$section_max-width: 100%;
 $regular_text: 16px;

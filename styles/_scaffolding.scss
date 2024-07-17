@@ -8,13 +8,20 @@
 
   box-sizing: border-box;
   font-family: "Roboto", Arial, sans-serif;
-
-  font-size: 18px;
-  color: $main_graphite;
 }
 
 a {
   text-decoration: none;
+  color: $main_graphite;
+}
+
+.main_container {
+  position: relative;
+  @include flex-container(column, start, start);
+  gap: 64px;
+
+  max-width: 80vw;
+  margin: 0 auto;
 }
 
 /* Класс для скрытия информации визуально, 
