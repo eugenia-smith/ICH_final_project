@@ -342,7 +342,7 @@ a {
   display: flex;
   align-items: center;
   padding: 11px 50px;
-  max-width: 1512px;
+  max-width: 100vw;
   min-height: 64px;
 }
 
@@ -431,7 +431,7 @@ a {
   display: flex;
   align-items: center;
   margin: 36px auto 24px;
-  max-width: 1196px;
+  max-width: 80vw;
 }
 
 .banner_info_container {
@@ -471,7 +471,7 @@ a {
 }
 
 .events {
-  max-width: 1196px;
+  max-width: 80vw;
   margin: 0 auto 40px;
 }
 
@@ -577,7 +577,7 @@ a {
 }
 
 .upcoming_events {
-  max-width: 1196px;
+  max-width: 80vw;
   margin: 0 auto;
 }
 
@@ -588,7 +588,7 @@ a {
   align-items: center;
   margin: 0 auto 64px;
   padding: 38px 56px;
-  max-width: 1196px;
+  max-width: 80vw;
   background-color: rgba(151, 202, 209, 0.08);
 }
 
@@ -610,8 +610,8 @@ a {
 }
 
 .categories {
-  max-width: 1196px;
-  margin: 0 auto;
+  max-width: 80vw;
+  margin: 0 auto 64px;
 }
 
 .section_heading {
@@ -641,4 +641,46 @@ a {
   background-color: rgba(151, 202, 209, 0.08);
   text-align: center;
   font-weight: 500;
+}
+
+.cities {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 16px;
+  max-width: 80vw;
+  margin: 0 auto 64px;
+}
+
+.section_description {
+  font-size: 16px;
+  color: #707070;
+  color: #707070;
+}
+
+.cities_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.cities_container .city {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.cities_container .city .city_img img {
+  border-radius: 50%;
+}
+.cities_container .city .city_title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

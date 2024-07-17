@@ -1,0 +1,35 @@
+.cities {
+  @include flex-container(column, start, start);
+  gap: 16px;
+  max-width: $section_max-width;
+  margin: 0 auto 64px;
+}
+
+.section_description {
+  @include regular-text;
+  color: $main_grey;
+}
+
+.cities_container {
+  @include flex-container(row, space-between, center);
+  gap: 24px;
+  flex-wrap: wrap;
+
+  width: 100%;
+
+  .city {
+    @include flex-container(column, center, center);
+    gap: 24px;
+
+    .city_img img {
+      border-radius: 50%;
+    }
+
+    .city_title {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 130%;
+      text-align: center;
+    }
+  }
+}
