@@ -1,0 +1,37 @@
+.friendships {
+  @include flex-container(column, start, start);
+  gap: 24px;
+  width: $section_max-width;
+}
+
+.section_description {
+  width: 75%;
+}
+
+.friendship_activities {
+  //   @include flex-container(row, space-between, center);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+
+  .activity {
+    @include flex-container(column, start, start);
+    gap: 16px;
+
+    .activity_title {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 150%;
+    }
+
+    .activity_info {
+      line-height: 150%;
+      color: $main_grey;
+    }
+
+    .activity_link {
+      @include links;
+      font-weight: 400;
+    }
+  }
+}

@@ -4,6 +4,7 @@
 
 .principles_container {
   @include flex-container(row, space-between, center);
+  min-height: 180px;
   background-color: $section_bg;
 
   .principle {

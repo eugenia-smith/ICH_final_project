@@ -600,7 +600,6 @@ a {
   align-items: center;
   flex-wrap: wrap;
   padding: 38px 56px;
-  max-width: 100%;
   background-color: rgba(151, 202, 209, 0.08);
 }
 
@@ -610,6 +609,7 @@ a {
   justify-content: start;
   align-items: start;
   flex-wrap: wrap;
+  width: 60%;
   gap: 16px;
 }
 .join_meetup_info .section_heading {
@@ -711,6 +711,7 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  min-height: 180px;
   background-color: rgba(151, 202, 209, 0.08);
 }
 .principles_container .principle {
@@ -740,4 +741,47 @@ a {
   font-size: 16px;
   font-weight: 500;
   color: #00798a;
+}
+
+.friendships {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 100%;
+}
+
+.section_description {
+  width: 75%;
+}
+
+.friendship_activities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+}
+.friendship_activities .activity {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.friendship_activities .activity .activity_title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%;
+}
+.friendship_activities .activity .activity_info {
+  line-height: 150%;
+  color: #707070;
+}
+.friendship_activities .activity .activity_link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #00798a;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */

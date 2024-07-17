@@ -2,12 +2,13 @@
   @include flex-container(row, space-between, center);
   padding: 38px 56px;
 
-  max-width: $section_max-width;
+  // width: $section_max-width;
   background-color: rgba($color: $main_light_teal, $alpha: 0.08);
 }
 
 .join_meetup_info {
   @include flex-container(column, start, start);
+  width: 60%;
   gap: 16px;
 
   .section_heading {
