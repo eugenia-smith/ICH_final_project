@@ -1,6 +1,6 @@
 .main_banner {
   @include flex-container_centered;
-  max-width: $section_max-width;
+  width: $section_max-width;
 }
 
 .banner_info_container {

@@ -333,7 +333,7 @@ a {
   flex-wrap: wrap;
   gap: 64px;
   max-width: 80vw;
-  margin: 0 auto;
+  margin: 64px auto;
 }
 
 /* Класс для скрытия информации визуально, 
@@ -441,7 +441,7 @@ a {
 .main_banner {
   display: flex;
   align-items: center;
-  max-width: 100%;
+  width: 100%;
 }
 
 .banner_info_container {
@@ -784,4 +784,132 @@ a {
   font-weight: 500;
   color: #00798a;
   font-weight: 400;
+}
+
+.page_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #212121;
+  gap: 24px;
+}
+.page_footer .group,
+.page_footer .page_contents,
+.page_footer .social_networking,
+.page_footer .service_links {
+  width: 80vw;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 25px 0;
+  border-bottom: 1px solid #f6f7f8;
+}
+.group .group_slogan {
+  font-size: 16px;
+  color: #707070;
+  font-weight: 600;
+  color: #f6f7f8;
+}
+.group .group_CTA {
+  padding: 8px 16px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+}
+
+.page_contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.page_contents .account,
+.page_contents .discover,
+.page_contents .meetup {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 30%;
+}
+.page_contents .account_title p {
+  color: #f6f7f8;
+}
+.page_contents .account_link a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #c5c4c4;
+}
+
+.social_networking {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 90px;
+}
+.social_networking .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.social_networking .links .links_heading {
+  font-size: 16px;
+  color: #707070;
+  color: #f6f7f8;
+}
+.social_networking .links .links_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.social_networking .apps {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.service_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  min-height: 80px;
+}
+.service_links .service_link {
+  font-size: 14px;
+  font-weight: 400;
+  color: #c5c4c4;
+}
+.service_links .service_link a {
+  color: #f6f7f8;
 }/*# sourceMappingURL=style.css.map */

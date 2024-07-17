@@ -1,0 +1,94 @@
+.page_footer {
+  @include flex_container(column, center, center);
+  background-color: $main_graphite;
+  gap: 24px;
+
+  .group,
+  .page_contents,
+  .social_networking,
+  .service_links {
+    width: 80vw;
+  }
+}
+
+.group {
+  @include flex-container(row, start, center);
+  gap: 40px;
+  padding: 25px 0;
+  border-bottom: 1px solid $main_footer_light_grey;
+
+  .group_slogan {
+    @include regular-text;
+    font-weight: 600;
+    color: $main_footer_light_grey;
+  }
+
+  .group_CTA {
+    @include buttons(transparent, $main_white, 16px, 600);
+    border: 2px solid $main_white;
+    border-radius: 8px;
+  }
+}
+
+.page_contents {
+  @include flex-container(row, start, start);
+
+  .account,
+  .discover,
+  .meetup {
+    @include flex-container(column, start, start);
+    gap: 8px;
+    width: 30%;
+  }
+
+  .account_title p {
+    color: $main_footer_light_grey;
+  }
+
+  .account_link a {
+    font-size: 14px;
+    font-weight: 400;
+    color: $main_light_grey;
+  }
+}
+
+.social_networking {
+  @include flex-container(row, space-between, center);
+  min-height: 90px;
+
+  .links {
+    @include flex-container(column, start, start);
+    gap: 12px;
+
+    .links_heading {
+      @include regular-text;
+      color: $main_footer_light_grey;
+    }
+
+    .links_container {
+      @include flex-container(row, start, start);
+      gap: 32px;
+    }
+  }
+
+  .apps {
+    @include flex-container(row, start, center);
+    gap: 12px;
+  }
+}
+
+.service_links {
+  @include flex-container(row, start, center);
+  gap: 24px;
+  min-height: 80px;
+
+  .service_link {
+    font-size: 14px;
+    font-weight: 400;
+    color: $main_light_grey;
+
+    a {
+      color: $main_footer_light_grey;
+    }
+  }
+}
