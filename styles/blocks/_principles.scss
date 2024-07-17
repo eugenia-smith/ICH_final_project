@@ -1,0 +1,30 @@
+.principles {
+  width: $section_max-width;
+}
+
+.principles_container {
+  @include flex-container(row, space-between, center);
+  background-color: $section_bg;
+
+  .principle {
+    @include flex-container(row, start, start);
+    gap: 24px;
+    padding: 24px 32px;
+    min-height: 124px;
+
+    .principle_info {
+      @include flex-container(column, start, start);
+      gap: 16px;
+
+      .info_title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 130%;
+      }
+
+      .info_link {
+        @include links;
+      }
+    }
+  }
+}
