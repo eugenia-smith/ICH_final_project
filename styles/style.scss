@@ -1,3 +1,5 @@
+// index page
+
 @import "normalize";
 @import "variables";
 @import "mixins";
@@ -12,3 +14,7 @@
 @import "blocks/principles";
 @import "blocks/friendships";
 @import "blocks/footer";
+
+// events page
+
+@import "blocks/filters";

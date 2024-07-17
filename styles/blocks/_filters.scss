@@ -1,0 +1,140 @@
+.page_container {
+  @include flex_container(row-reverse, space-between, start);
+  margin: 64px auto;
+  width: 80vw;
+}
+
+.events_map {
+  @include flex_container(column, start, start);
+  gap: 6px;
+
+  .map_wrapper {
+    position: relative;
+    max-width: 360px;
+
+    .cross {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+
+      width: 15px;
+      height: 15px;
+      border: none;
+      background-color: $main_white;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 6px;
+        right: 0;
+        width: 15px;
+        height: 2px;
+        background-color: $main_teal;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+
+    .browse_button {
+      @include buttons($main_white, $main_teal, 14px, 500);
+      position: absolute;
+      top: 40%;
+      left: 30%;
+      padding-right: 50px;
+      border: 2px solid $main_teal;
+      border-radius: 8px;
+
+      &::after {
+        content: url(../../assets/icons/browse.svg);
+        position: absolute;
+        top: 6px;
+        right: 20px;
+      }
+    }
+  }
+}
+
+.events_filter_link {
+  @include links;
+  text-decoration: underline;
+}
+
+.filters {
+  @include flex_container(row, start, center);
+  gap: 16px;
+  margin: 16px 0 40px;
+
+  .filter {
+    padding: 16px;
+    border-radius: 40px;
+    background-color: $main_footer_light_grey;
+
+    & select {
+      border: none;
+      background-color: transparent;
+
+      & option {
+        @include regular-text;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.events_main {
+  width: 50%;
+}
+
+.search_results {
+  @include flex_container(column, start, start);
+  gap: 40px;
+
+  article {
+    @include flex_container(row, start, start);
+    flex-wrap: nowrap;
+    gap: 12px;
+    padding-top: 16px;
+    min-height: 120px;
+    border-top: 1px solid $main_lighter_grey;
+
+    div {
+      @include flex_container(column, start, start);
+      gap: 12px;
+
+      .option_date {
+        font-size: 14px;
+        font-weight: 500;
+        color: $main_gold;
+      }
+
+      .option_heading {
+        @include regular-text;
+        font-weight: 500;
+        color: $main_graphite;
+      }
+
+      .option_category {
+        font-size: 14px;
+        font-weight: 500;
+        color: $main_grey;
+      }
+
+      .option_attendees {
+        @include regular-text;
+        font-size: 14px;
+
+        span {
+          margin-left: 16px;
+          color: $main_pink;
+        }
+      }
+    }
+  }
+}

@@ -73,115 +73,145 @@
 
     <div class="page_container">
       <aside class="events_map">
-            <p class="aside_text">Find events near</p>
-            <h3 class="aside_title">New York, NY</h3>
-            <picture class="aside_map">
-                <img src="assets/images/desktop/events_planner_map.png" alt="">
-            </picture>
-            <button type="button" class="cross"></button>
-            <button type="button" class="browse_button">Browse in map</button>
-
+        <p class="aside_text">Find events near</p>
+        <h3 class="aside_title">New York, NY</h3>
+        <div class="map_wrapper">
+          <picture class="aside_map">
+            <img src="assets/images/desktop/events_planner_map.png" alt="" />
+          </picture>
+          <button type="button" class="cross"></button>
+          <button type="button" class="browse_button">Browse in map</button>
+        </div>
       </aside>
-        
-    <main class="events_main">
-      <h2 class="section_heading">Events near New York, NY</h2>
-      <a href="" class="events_filter_link">Events</a>
-      <ul class="filters">
-                <li class="filter">
-                    <select name="type_select" id="">
-                        <option value="Any type">Any type</option>
-                    </select>
-                </li>
-                <li class="filter">
-                    <select name="distance_select" id="">
-                        <option value="Any distance">Any distance</option>
-                    </select>
-                </li>
-                <li class="filter">
-                    <select name="category_select" id="">
-                        <option value="Any category">Any category</option>
-                    </select>
-                </li>
-      </ul>
-      <div class="search_results">
-        <article class="search_option">
-          <picture class="search_option_img">
-            <img src="assets/images/desktop/events_planner_item1.jpg" alt="">
-          </picture>
-          <div class="search_option_info">
-            <p class="option_date">WED, MAR 13 - 11:30 PM UTC</p>
-            <p class="option_heading">All Nations - Manhattan Missions Church Bible Study</p>
-            <p class="option_category">Hobbies & Passions (5 km)</p>
-            <p class="option_attendees"></p>
-          </div>
-        </article>
 
-        <article class="search_option">
-          <picture class="search_option_img">
-            <img src="assets/images/desktop/events_planner_item2.jpg" alt="">
-          </picture>
-          <div class="search_option_info">
-            <p class="option_date">SAT, MAR 23 - 3:00 PM UTC</p>
-            <p class="option_heading">INFJ Personality Type - Coffee Shop Meet & Greet</p>
-            <p class="option_category">Hobbies & Passions (25 km)</p>
-            <p class="option_attendees">99 attendees</p>
-          </div>
-        </article>
+      <main class="events_main">
+        <h2 class="section_heading">Events near New York, NY</h2>
+        <a href="" class="events_filter_link">Events</a>
+        <ul class="filters">
+          <li class="filter">
+            <select name="type_select" id="">
+              <option value="Any type">Any type</option>
+            </select>
+          </li>
+          <li class="filter">
+            <select name="distance_select" id="">
+              <option value="Any distance">Any distance</option>
+            </select>
+          </li>
+          <li class="filter">
+            <select name="category_select" id="">
+              <option value="Any category">Any category</option>
+            </select>
+          </li>
+        </ul>
 
+        <div class="search_results">
+          <article class="search_option">
+            <picture class="search_option_img">
+              <img
+                src="assets/images/desktop/events_planner_item1.jpg"
+                alt=""
+              />
+            </picture>
+            <div class="search_option_info">
+              <p class="option_date">WED, MAR 13 - 11:30 PM UTC</p>
+              <p class="option_heading">
+                All Nations - Manhattan Missions Church Bible Study
+              </p>
+              <p class="option_category">Hobbies & Passions (5 km)</p>
+              <p class="option_attendees"></p>
+            </div>
+          </article>
 
-        <article class="search_option">
-          <picture class="search_option_img">
-            <img src="assets/images/desktop/events_planner_item3.jpg" alt="">
-          </picture>
-          <div class="search_option_info">
-            <p class="option_date">WED, MAR 13 - 11:30 PM UTC</p>
-            <p class="option_heading">NYC AI Users - AI Tech Talks, Demo & Social: RAG
-              Search and Customer Experience</p>
-            <p class="option_category">Technology (50 km)</p>
-            <p class="option_attendees">43 attendees <span class="attendees_left">2 spots left</span></p>
-          </div>
-        </article>
+          <article class="search_option">
+            <picture class="search_option_img">
+              <img
+                src="assets/images/desktop/events_planner_item2.jpg"
+                alt=""
+              />
+            </picture>
+            <div class="search_option_info">
+              <p class="option_date">SAT, MAR 23 - 3:00 PM UTC</p>
+              <p class="option_heading">
+                INFJ Personality Type - Coffee Shop Meet & Greet
+              </p>
+              <p class="option_category">Hobbies & Passions (25 km)</p>
+              <p class="option_attendees">99 attendees</p>
+            </div>
+          </article>
 
-        <article class="search_option">
-          <picture class="search_option_img">
-            <img src="assets/images/desktop/events_planner_item4.jpg" alt="">
-          </picture>
-          <div class="search_option_info">
-            <p class="option_date">WED, MAR 13 - 11:30 PM UTC</p>
-            <p class="option_heading">Book 40+ Appointments Per Month Using AI and
-              Automation</p>
-            <p class="option_category">Technology</p>
-            <p class="option_attendees"></p>
-          </div>
-        </article>
+          <article class="search_option">
+            <picture class="search_option_img">
+              <img
+                src="assets/images/desktop/events_planner_item3.jpg"
+                alt=""
+              />
+            </picture>
+            <div class="search_option_info">
+              <p class="option_date">WED, MAR 13 - 11:30 PM UTC</p>
+              <p class="option_heading">
+                NYC AI Users - AI Tech Talks, Demo & Social: RAG Search and
+                Customer Experience
+              </p>
+              <p class="option_category">Technology (50 km)</p>
+              <p class="option_attendees">
+                43 attendees <span class="attendees_left">2 spots left</span>
+              </p>
+            </div>
+          </article>
 
-        <article class="search_option">
-          <picture class="search_option_img">
-            <img src="assets/images/desktop/events_planner_item5.jpg" alt="">
-          </picture>
-          <div class="search_option_info">
-            <p class="option_date">WED, MAR 13 - 11:00 PM UTC</p>
-            <p class="option_heading">Dump writing group weekly meetup</p>
-            <p class="option_category">Hobbies & Passions (5 km)</p>
-            <p class="option_attendees">77 attendees</p>
-          </div>
-        </article>
+          <article class="search_option">
+            <picture class="search_option_img">
+              <img
+                src="assets/images/desktop/events_planner_item4.jpg"
+                alt=""
+              />
+            </picture>
+            <div class="search_option_info">
+              <p class="option_date">WED, MAR 13 - 11:30 PM UTC</p>
+              <p class="option_heading">
+                Book 40+ Appointments Per Month Using AI and Automation
+              </p>
+              <p class="option_category">Technology</p>
+              <p class="option_attendees"></p>
+            </div>
+          </article>
 
-        <article class="search_option">
-          <picture class="search_option_img">
-            <img src="assets/images/desktop/events_planner_item6.jpg" alt="">
-          </picture>
-          <div class="search_option_info">
-            <p class="option_date">THU, MAR 14 · 11:00 PM UTC</p>
-            <p class="option_heading">Over 40s, 50s, & 60s Senior Singles Chat, Meet &
-              Dating Community</p>
-            <p class="option_category">Hobbies & Passions</p>
-            <p class="option_attendees">140 attendees</p>
-          </div>
-        </article>
-      </div>
+          <article class="search_option">
+            <picture class="search_option_img">
+              <img
+                src="assets/images/desktop/events_planner_item5.jpg"
+                alt=""
+              />
+            </picture>
+            <div class="search_option_info">
+              <p class="option_date">WED, MAR 13 - 11:00 PM UTC</p>
+              <p class="option_heading">Dump writing group weekly meetup</p>
+              <p class="option_category">Hobbies & Passions (5 km)</p>
+              <p class="option_attendees">77 attendees</p>
+            </div>
+          </article>
 
-    </main>
+          <article class="search_option">
+            <picture class="search_option_img">
+              <img
+                src="assets/images/desktop/events_planner_item6.jpg"
+                alt=""
+              />
+            </picture>
+            <div class="search_option_info">
+              <p class="option_date">THU, MAR 14 · 11:00 PM UTC</p>
+              <p class="option_heading">
+                Over 40s, 50s, & 60s Senior Singles Chat, Meet & Dating
+                Community
+              </p>
+              <p class="option_category">Hobbies & Passions</p>
+              <p class="option_attendees">140 attendees</p>
+            </div>
+          </article>
+        </div>
+      </main>
+    </div>
 
     <footer class="page_footer">
       <div class="group">
