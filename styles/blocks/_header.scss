@@ -1,5 +1,7 @@
 .main_header {
   @include flex_container_centered;
+  flex-wrap: wrap;
+  margin: 0 auto;
   padding: 11px 50px;
 
   max-width: 1512px;
@@ -8,12 +10,13 @@
 
 .header_search {
   @include flex_container_centered;
+  order: 1;
   gap: 0px;
   margin-left: 40px;
   border: none;
 
   .search_input {
-    @include inputs(300px, 36px);
+    @include inputs(20vw, 36px);
     border-radius: 8px 0 0 8px;
   }
 
@@ -21,7 +24,7 @@
     position: relative;
 
     .search_location {
-      @include inputs(300px, 36px);
+      @include inputs(20vw, 36px);
       border-radius: 0 8px 8px 0;
 
       &::placeholder {
@@ -48,6 +51,7 @@
 
 .header_user-menu {
   @include flex_container_centered;
+  order: 2;
   gap: 22px;
   margin-left: auto;
 }
@@ -73,4 +77,11 @@
 
 .button {
   @include buttons($main_teal, $main_white, 14px, 600);
+}
+
+@media (max-width: 1200px) {
+  .header_search {
+    margin: 24px auto;
+    order: 3;
+  }
 }

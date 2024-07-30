@@ -11,6 +11,19 @@
   flex-wrap: wrap;
 }
 
+@mixin adaptive_font-size($pcSize, $mobSize) {
+  $difference: $pcSize - $mobSize;
+  $mobIndex: $difference + $difference * 0.7;
+
+  @media (max-width: 767px) {
+    font-size: calc(#{$mobSize + px} + #{$mobIndex} * ((100vw - 393px) / 1520));
+  }
+
+  @media (min-width: 768px) {
+    font-size: calc(#{$mobSize + px} + #{$difference} * (100vw / 1520));
+  }
+}
+
 @mixin section_heading {
   font-size: 28px;
   line-height: 130%;

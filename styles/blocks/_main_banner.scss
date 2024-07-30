@@ -11,7 +11,8 @@
 }
 
 .banner_slogan {
-  font-size: 42px;
+  @include adaptive_font-size(42, 25);
+  // font-size: 42px;
   line-height: 110%;
   font-weight: 700;
 }
