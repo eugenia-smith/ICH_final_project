@@ -9,6 +9,7 @@
 
   .section_heading {
     @include section_heading;
+    margin-bottom: 0;
   }
 
   .location_wrapper {

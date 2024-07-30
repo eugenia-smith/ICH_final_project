@@ -498,6 +498,7 @@ a {
   font-size: 28px;
   line-height: 130%;
   font-weight: 600;
+  margin-bottom: 0;
 }
 .section_header .location_wrapper {
   display: flex;
@@ -977,7 +978,7 @@ a {
   border-radius: 8px;
 }
 .events_map .map_wrapper .browse_button::after {
-  content: url(../../assets/icons/browse.svg);
+  content: url();
   position: absolute;
   top: 6px;
   right: 20px;
