@@ -31,7 +31,7 @@
 }
 
 @mixin regular-text {
-  font-size: $regular_text;
+  @include adaptive_font-size(16, 10);
   color: $main_grey;
 }
 
