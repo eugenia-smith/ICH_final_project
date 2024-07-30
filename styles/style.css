@@ -978,7 +978,7 @@ a {
   border-radius: 8px;
 }
 .events_map .map_wrapper .browse_button::after {
-  content: url();
+  content: url(../../assets/icons/expand_mapicon.svg);
   position: absolute;
   top: 6px;
   right: 20px;
