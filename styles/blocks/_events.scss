@@ -26,7 +26,7 @@
     background-color: rgba($color: $main_light_teal, $alpha: 0.12);
 
     &::placeholder {
-      font-size: 20px;
+      @include adaptive_font-size(20, 13);
       font-weight: 500;
       color: $main_teal;
     }
@@ -58,7 +58,7 @@
     min-height: 400px;
 
     .card_heading {
-      font-size: 20px;
+      @include adaptive_font-size(20, 10);
       font-weight: 600;
     }
 

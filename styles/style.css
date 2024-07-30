@@ -358,39 +358,70 @@ a {
   max-width: 1512px;
   min-height: 64px;
 }
+@media (max-width: 1000px) {
+  .main_header {
+    padding: 11px 16px;
+  }
+}
 
 .header_search {
   display: flex;
   align-items: center;
   order: 1;
+  position: relative;
   gap: 0px;
   margin-left: 40px;
   border: none;
 }
 .header_search .search_input {
-  padding: 13px 6px 13px 17px;
-  min-width: 20vw;
+  padding: 0 6px 0 32px;
+  width: 20vw;
   height: 36px;
   border: 1px solid #d9d9d9;
   border-radius: 8px 0 0 8px;
+  background-image: url("../../assets/icons/search_grey.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 8px center;
+}
+.header_search .search_input::-moz-placeholder {
+  color: #707070;
+}
+.header_search .search_input::placeholder {
+  color: #707070;
 }
 .header_search .search_container {
   position: relative;
 }
 .header_search .search_container .search_location {
-  padding: 13px 6px 13px 17px;
-  min-width: 20vw;
+  padding: 0 6px 0 32px;
+  width: 20vw;
   height: 36px;
   border: 1px solid #d9d9d9;
+  padding: 0 16px;
   border-radius: 0 8px 8px 0;
 }
 .header_search .search_container .search_location::-moz-placeholder {
-  font-size: 16px;
   color: #000000;
 }
 .header_search .search_container .search_location::placeholder {
-  font-size: 16px;
   color: #000000;
+}
+@media (max-width: 767px) {
+  .header_search .search_container .search_location::-moz-placeholder {
+    font-size: calc(12px + 6.8 * (100vw - 393px) / 1520);
+  }
+  .header_search .search_container .search_location::placeholder {
+    font-size: calc(12px + 6.8 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .header_search .search_container .search_location::-moz-placeholder {
+    font-size: calc(12px + 4 * 0.0657894737vw);
+  }
+  .header_search .search_container .search_location::placeholder {
+    font-size: calc(12px + 4 * 0.0657894737vw);
+  }
 }
 .header_search .search_container .search_button {
   display: flex;
@@ -413,6 +444,11 @@ a {
   gap: 22px;
   margin-left: auto;
 }
+@media (max-width: 1000px) {
+  .header_user-menu {
+    gap: 16px;
+  }
+}
 
 .user_language {
   display: flex;
@@ -420,15 +456,33 @@ a {
   gap: 5px;
 }
 .user_language .lang_text {
-  font-size: 14px;
   font-weight: 600;
+}
+@media (max-width: 767px) {
+  .user_language .lang_text {
+    font-size: calc(12px + 3.4 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .user_language .lang_text {
+    font-size: calc(12px + 2 * 0.0657894737vw);
+  }
 }
 
 .login_button {
   border: none;
   background-color: transparent;
-  font-size: 14px;
   font-weight: 600;
+}
+@media (max-width: 767px) {
+  .login_button {
+    font-size: calc(12px + 3.4 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .login_button {
+    font-size: calc(12px + 2 * 0.0657894737vw);
+  }
 }
 
 .button {
@@ -441,11 +495,26 @@ a {
   font-size: 14px;
   font-weight: 600;
 }
+@media (max-width: 1000px) {
+  .button {
+    font-size: 12px;
+  }
+}
 
-@media (max-width: 1200px) {
+@media (max-width: 960px) {
   .header_search {
     margin: 24px auto;
     order: 3;
+  }
+  .header_search .search_input {
+    width: 80vw;
+  }
+  .header_search .search_container .search_location {
+    display: none;
+  }
+  .header_search .search_container .search_button {
+    left: 0;
+    top: -18px;
   }
 }
 .main_banner {
@@ -514,10 +583,19 @@ a {
   margin-bottom: 24px;
 }
 .section_header .section_heading {
-  font-size: 28px;
   line-height: 130%;
   font-weight: 600;
   margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .section_header .section_heading {
+    font-size: calc(20px + 13.6 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .section_header .section_heading {
+    font-size: calc(20px + 8 * 0.0657894737vw);
+  }
 }
 .section_header .location_wrapper {
   display: flex;
@@ -525,8 +603,8 @@ a {
   position: relative;
 }
 .section_header .events_location {
-  padding: 13px 6px 13px 17px;
-  min-width: 240px;
+  padding: 0 6px 0 32px;
+  width: 240px;
   height: 44px;
   border: 1px solid #d9d9d9;
   border: none;
@@ -534,14 +612,28 @@ a {
   background-color: rgba(151, 202, 209, 0.12);
 }
 .section_header .events_location::-moz-placeholder {
-  font-size: 20px;
   font-weight: 500;
   color: #00798a;
 }
 .section_header .events_location::placeholder {
-  font-size: 20px;
   font-weight: 500;
   color: #00798a;
+}
+@media (max-width: 767px) {
+  .section_header .events_location::-moz-placeholder {
+    font-size: calc(13px + 11.9 * (100vw - 393px) / 1520);
+  }
+  .section_header .events_location::placeholder {
+    font-size: calc(13px + 11.9 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .section_header .events_location::-moz-placeholder {
+    font-size: calc(13px + 7 * 0.0657894737vw);
+  }
+  .section_header .events_location::placeholder {
+    font-size: calc(13px + 7 * 0.0657894737vw);
+  }
 }
 .section_header .edit_button {
   display: flex;
@@ -573,8 +665,17 @@ a {
   min-height: 400px;
 }
 .events_container .event_card .card_heading {
-  font-size: 20px;
   font-weight: 600;
+}
+@media (max-width: 767px) {
+  .events_container .event_card .card_heading {
+    font-size: calc(10px + 17 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .events_container .event_card .card_heading {
+    font-size: calc(10px + 10 * 0.0657894737vw);
+  }
 }
 .events_container .event_card .card_topic {
   font-size: 14px;
@@ -633,9 +734,18 @@ a {
   gap: 16px;
 }
 .join_meetup_info .section_heading {
-  font-size: 28px;
   line-height: 130%;
   font-weight: 600;
+}
+@media (max-width: 767px) {
+  .join_meetup_info .section_heading {
+    font-size: calc(20px + 13.6 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .join_meetup_info .section_heading {
+    font-size: calc(20px + 8 * 0.0657894737vw);
+  }
 }
 .join_meetup_info .signup_button {
   padding: 8px 64px;
@@ -647,10 +757,19 @@ a {
 }
 
 .section_heading {
-  font-size: 28px;
   line-height: 130%;
   font-weight: 600;
   margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .section_heading {
+    font-size: calc(20px + 13.6 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .section_heading {
+    font-size: calc(20px + 8 * 0.0657894737vw);
+  }
 }
 
 .categories_container {
