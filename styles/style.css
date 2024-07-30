@@ -587,7 +587,7 @@ a {
 }
 
 .events {
-  max-width: 100%;
+  width: 100%;
 }
 
 .section_header {
@@ -669,8 +669,8 @@ a {
 
 .events_container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 36px;
+  grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+  grid-gap: 2vw;
 }
 .events_container .event_card {
   display: flex;
@@ -679,27 +679,44 @@ a {
   align-items: start;
   flex-wrap: wrap;
   gap: 12px;
-  min-height: 400px;
 }
-.events_container .event_card .card_heading {
+.events_container .event_card .card_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+.events_container .event_card .card_content .card_heading {
   font-weight: 600;
 }
 @media (max-width: 767px) {
-  .events_container .event_card .card_heading {
+  .events_container .event_card .card_content .card_heading {
     font-size: calc(10px + 17 * (100vw - 393px) / 1520);
   }
 }
 @media (min-width: 768px) {
-  .events_container .event_card .card_heading {
+  .events_container .event_card .card_content .card_heading {
     font-size: calc(10px + 10 * 0.0657894737vw);
   }
 }
-.events_container .event_card .card_topic {
-  font-size: 14px;
+.events_container .event_card .card_content .card_topic {
   font-weight: 500;
   color: #707070;
 }
-.events_container .event_card .card_description_wrapper {
+@media (max-width: 767px) {
+  .events_container .event_card .card_content .card_topic {
+    font-size: calc(10px + 6.8 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .events_container .event_card .card_content .card_topic {
+    font-size: calc(10px + 4 * 0.0657894737vw);
+  }
+}
+.events_container .event_card .card_content .card_description_wrapper {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -708,23 +725,68 @@ a {
   gap: 16px;
   flex-wrap: wrap;
 }
-.events_container .event_card .card_description_wrapper .date {
+.events_container .event_card .card_content .card_description_wrapper .date {
   width: 100%;
 }
-.events_container .event_card .card_description_wrapper .date::before {
+@media (max-width: 767px) {
+  .events_container .event_card .card_content .card_description_wrapper .date {
+    font-size: calc(10px + 10.2 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .events_container .event_card .card_content .card_description_wrapper .date {
+    font-size: calc(10px + 6 * 0.0657894737vw);
+  }
+}
+.events_container .event_card .card_content .card_description_wrapper .date::before {
   content: url(../../assets/icons/event_card_calendar.svg);
   vertical-align: middle;
   margin-right: 6px;
 }
-.events_container .event_card .card_description_wrapper .participants::before {
+@media (max-width: 767px) {
+  .events_container .event_card .card_content .card_description_wrapper .participants {
+    font-size: calc(10px + 10.2 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .events_container .event_card .card_content .card_description_wrapper .participants {
+    font-size: calc(10px + 6 * 0.0657894737vw);
+  }
+}
+.events_container .event_card .card_content .card_description_wrapper .participants::before {
   content: url(../../assets/icons/event_card_tick.svg);
   vertical-align: middle;
   margin-right: 6px;
 }
-.events_container .event_card .card_description_wrapper .admission::before {
+@media (max-width: 767px) {
+  .events_container .event_card .card_content .card_description_wrapper .admission {
+    font-size: calc(10px + 10.2 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .events_container .event_card .card_content .card_description_wrapper .admission {
+    font-size: calc(10px + 6 * 0.0657894737vw);
+  }
+}
+.events_container .event_card .card_content .card_description_wrapper .admission::before {
   content: url(../../assets/icons/event_card_admission.svg);
-  vertical-align: sub;
+  vertical-align: middle;
   margin-right: 6px;
+}
+@media (max-width: 767px) {
+  .events_container .event_card .card_content .card_description_wrapper {
+    gap: 6px;
+  }
+}
+@media (max-width: 767px) {
+  .events_container .event_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+  }
 }
 
 .upcoming_events {

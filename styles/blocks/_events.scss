@@ -1,5 +1,5 @@
 .events {
-  max-width: $section_max-width;
+  width: $section_max-width;
 }
 
 .section_header {
@@ -48,56 +48,74 @@
 
 .events_container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 36px;
+  grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+  grid-gap: 2vw;
 
   .event_card {
     @include flex_container(column, start, start);
     gap: 12px;
 
-    min-height: 400px;
+    .card_content {
+      @include flex_container(column, start, start);
+      gap: 8px;
+      flex-wrap: nowrap;
 
-    .card_heading {
-      @include adaptive_font-size(20, 10);
-      font-weight: 600;
+      .card_heading {
+        @include adaptive_font-size(20, 10);
+        font-weight: 600;
+      }
+
+      .card_topic {
+        @include adaptive_font-size(14, 10);
+        font-weight: 500;
+        color: $main_grey;
+      }
+
+      .card_description_wrapper {
+        @include flex_container(row, start, center);
+        gap: 16px;
+        flex-wrap: wrap;
+
+        .date {
+          @include adaptive_font-size(16, 10);
+          width: 100%;
+
+          &::before {
+            content: url(../../assets/icons/event_card_calendar.svg);
+            vertical-align: middle;
+            margin-right: 6px;
+          }
+        }
+
+        .participants {
+          @include adaptive_font-size(16, 10);
+
+          &::before {
+            content: url(../../assets/icons/event_card_tick.svg);
+            vertical-align: middle;
+            margin-right: 6px;
+          }
+        }
+
+        .admission {
+          @include adaptive_font-size(16, 10);
+
+          &::before {
+            content: url(../../assets/icons/event_card_admission.svg);
+            vertical-align: middle;
+            margin-right: 6px;
+          }
+        }
+
+        @media (max-width: 767px) {
+          gap: 6px;
+        }
+      }
     }
 
-    .card_topic {
-      font-size: 14px;
-      font-weight: 500;
-      color: $main_grey;
-    }
-
-    .card_description_wrapper {
-      @include flex_container(row, start, center);
-      gap: 16px;
-      flex-wrap: wrap;
-
-      .date {
-        width: 100%;
-
-        &::before {
-          content: url(../../assets/icons/event_card_calendar.svg);
-          vertical-align: middle;
-          margin-right: 6px;
-        }
-      }
-
-      .participants {
-        &::before {
-          content: url(../../assets/icons/event_card_tick.svg);
-          vertical-align: middle;
-          margin-right: 6px;
-        }
-      }
-
-      .admission {
-        &::before {
-          content: url(../../assets/icons/event_card_admission.svg);
-          vertical-align: sub;
-          margin-right: 6px;
-        }
-      }
+    @media (max-width: 767px) {
+      @include flex_container(row, start, start);
+      flex-wrap: nowrap;
     }
   }
 }
