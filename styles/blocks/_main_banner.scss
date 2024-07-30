@@ -1,5 +1,6 @@
 .main_banner {
   @include flex-container_centered;
+  flex-wrap: wrap;
   width: $section_max-width;
 }
 
@@ -8,11 +9,17 @@
   gap: 24px;
 
   width: 50%;
+
+  @media (max-width: 960px) {
+    @include flex-container(column, center, center);
+    margin-bottom: 16px;
+
+    width: 100%;
+  }
 }
 
 .banner_slogan {
   @include adaptive_font-size(42, 25);
-  // font-size: 42px;
   line-height: 110%;
   font-weight: 700;
 }
