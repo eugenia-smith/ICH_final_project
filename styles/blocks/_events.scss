@@ -6,6 +6,7 @@
   @include flex_container(row, start, center);
   gap: 22px;
   margin-bottom: 24px;
+  width: 100%;
 
   .section_heading {
     @include section_heading;
@@ -15,6 +16,10 @@
   .location_wrapper {
     @include flex_container_centered;
     position: relative;
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   }
 
   .events_location {
@@ -30,6 +35,10 @@
       font-weight: 500;
       color: $main_teal;
     }
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   }
 
   .edit_button {
@@ -43,6 +52,14 @@
   a {
     @include links;
     margin-left: auto;
+
+    @media (max-width: 600px) {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    @include flex-container(column, start, start);
   }
 }
 

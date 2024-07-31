@@ -8,7 +8,7 @@
 }
 
 .categories_container {
-  @include flex-container(row, space-between, center);
+  @include flex-container(row, space-evenly, center);
   gap: 10px;
   width: 100%;
 

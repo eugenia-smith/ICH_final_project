@@ -100,9 +100,32 @@
     @include flex_container(row, start, start);
     flex-wrap: nowrap;
     gap: 12px;
+
+    position: relative;
+
     padding-top: 16px;
     min-height: 120px;
     border-top: 1px solid $main_lighter_grey;
+
+    .online_mark {
+      position: absolute;
+      top: 24px;
+      left: 8px;
+
+      width: 105px;
+      height: 20px;
+
+      background-image: url(../../assets/icons/online_event.png);
+    }
+
+    picture {
+      img {
+        width: 160px;
+        height: 90px;
+
+        border-radius: 8px;
+      }
+    }
 
     div {
       @include flex_container(column, start, start);
@@ -112,6 +135,7 @@
         font-size: 14px;
         font-weight: 500;
         color: $main_gold;
+        text-transform: uppercase;
       }
 
       .option_heading {

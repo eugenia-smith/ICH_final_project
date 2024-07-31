@@ -10,7 +10,7 @@
 }
 
 .cities_container {
-  @include flex-container(row, space-between, center);
+  @include flex-container(row, space-evenly, center);
   gap: 24px;
 
   width: 100%;
@@ -35,5 +35,9 @@
         display: none;
       }
     }
+  }
+
+  @media (max-width: 767px) {
+    justify-content: center;
   }
 }
