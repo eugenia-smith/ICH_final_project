@@ -74,6 +74,10 @@
   .apps {
     @include flex-container(row, start, center);
     gap: 12px;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 }
 
@@ -83,12 +87,16 @@
   min-height: 80px;
 
   .service_link {
-    font-size: 14px;
+    @include adaptive_font-size(16, 12);
     font-weight: 400;
     color: $main_light_grey;
 
     a {
       color: $main_footer_light_grey;
+
+      @media (max-width: 960px) {
+        display: none;
+      }
     }
   }
 }
