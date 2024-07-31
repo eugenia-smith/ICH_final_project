@@ -90,24 +90,48 @@
         <a href="" class="events_filter_link">Events</a>
         <ul class="filters">
           <li class="filter">
-            <select name="type_select" id="">
-              <option value="Any type">Any type</option>
+            <select class="filter_select" name="category_select" id="">
+              <option value="">Any category</option>
+              <option value="Social Activities">Social Activities</option>
+              <option value="Hobbies and Passions">Hobbies and Passions</option>
+              <option value="Health and Wellbeing">Health and Wellbeing</option>
+              <option value="Business">Business</option>
+              <option value="Technology">Technology</option>
             </select>
           </li>
           <li class="filter">
-            <select name="distance_select" id="">
-              <option value="Any distance">Any distance</option>
+            <select class="filter_select" name="distance_select" id="">
+              <option value="">Any distance</option>
+              <option value="10">10 km</option>
+              <option value="15">15 km</option>
+              <option value="25">25 km</option>
+              <option value="50">50 km</option>
+              <option value="75">75 km</option>
+              <option value="100">100 km</option>
             </select>
           </li>
           <li class="filter">
-            <select name="category_select" id="">
-              <option value="Any category">Any category</option>
+            <select class="filter_select" name="type_select" id="">
+              <option value="">Any type</option>
+              <option value="online">Online</option>
+              <option value="offline">Offline</option>
+            </select>
+          </li>
+          <li class="filter">
+            <select class="filter_select" name="date_select" id="">
+              <option value="">Any date</option>
+              <option value="2,13">March, 13</option>
+              <option value="2,14">March, 14</option>
+              <option value="2,16">March, 16</option>
+              <option value="2,23">March, 23</option>
+              <option value="2,30">March, 30</option>
             </select>
           </li>
         </ul>
 
         <div class="search_results">
-          <article class="search_option">
+          <!-- <article class="search_option">
+            <div class="online_mark"></div>
             <picture class="search_option_img">
               <img
                 src="assets/images/desktop/events_planner_item1.jpg"
@@ -122,9 +146,9 @@
               <p class="option_category">Hobbies & Passions (5 km)</p>
               <p class="option_attendees"></p>
             </div>
-          </article>
+          </article> -->
 
-          <article class="search_option">
+          <!-- <article class="search_option">
             <picture class="search_option_img">
               <img
                 src="assets/images/desktop/events_planner_item2.jpg"
@@ -209,7 +233,7 @@
               <p class="option_category">Hobbies & Passions</p>
               <p class="option_attendees">140 attendees</p>
             </div>
-          </article>
+          </article> -->
         </div>
       </main>
     </div>
