@@ -20,11 +20,16 @@ a {
   @include flex-container(column, start, start);
   gap: 64px;
 
-  max-width: 80vw;
+  width: 80vw;
   margin: 64px auto;
 
   @media (max-width: 960px) {
     margin: 32px auto;
+  }
+
+  @media (min-width: 393px) {
+    margin: 12px auto;
+    width: 96vw;
   }
 }
 
