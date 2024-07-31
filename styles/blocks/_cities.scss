@@ -5,14 +5,13 @@
 }
 
 .section_description {
-  @include regular-text;
+  @include adaptive_font-size(16, 12);
   color: $main_grey;
 }
 
 .cities_container {
   @include flex-container(row, space-between, center);
   gap: 24px;
-  flex-wrap: wrap;
 
   width: 100%;
 
@@ -25,10 +24,16 @@
     }
 
     .city_title {
-      font-size: 20px;
+      @include adaptive_font-size(20, 14);
       font-weight: 600;
       line-height: 130%;
       text-align: center;
+    }
+
+    @media (max-width: 767px) {
+      &:last-child {
+        display: none;
+      }
     }
   }
 }

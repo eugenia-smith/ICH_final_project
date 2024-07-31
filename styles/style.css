@@ -899,6 +899,7 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 10px;
   width: 100%;
 }
 .categories_container .category {
@@ -929,16 +930,15 @@ a {
 
 .section_description {
   color: #707070;
-  color: #707070;
 }
 @media (max-width: 767px) {
   .section_description {
-    font-size: calc(10px + 10.2 * (100vw - 393px) / 1520);
+    font-size: calc(12px + 6.8 * (100vw - 393px) / 1520);
   }
 }
 @media (min-width: 768px) {
   .section_description {
-    font-size: calc(10px + 6 * 0.0657894737vw);
+    font-size: calc(12px + 4 * 0.0657894737vw);
   }
 }
 
@@ -949,7 +949,6 @@ a {
   align-items: center;
   flex-wrap: wrap;
   gap: 24px;
-  flex-wrap: wrap;
   width: 100%;
 }
 .cities_container .city {
@@ -964,10 +963,24 @@ a {
   border-radius: 50%;
 }
 .cities_container .city .city_title {
-  font-size: 20px;
   font-weight: 600;
   line-height: 130%;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .cities_container .city .city_title {
+    font-size: calc(14px + 10.2 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .cities_container .city .city_title {
+    font-size: calc(14px + 6 * 0.0657894737vw);
+  }
+}
+@media (max-width: 767px) {
+  .cities_container .city:last-child {
+    display: none;
+  }
 }
 
 .principles {
