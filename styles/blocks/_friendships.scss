@@ -6,27 +6,30 @@
 
 .section_description {
   width: 75%;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .friendship_activities {
-  //   @include flex-container(row, space-between, center);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(376px, 1fr));
+  grid-gap: 2vw;
 
   .activity {
     @include flex-container(column, start, start);
     gap: 16px;
 
     .activity_title {
-      font-size: 18px;
+      @include adaptive_font-size(18, 16);
       font-weight: 600;
       line-height: 150%;
     }
 
     .activity_info {
+      @include regular-text;
       line-height: 150%;
-      color: $main_grey;
     }
 
     .activity_link {

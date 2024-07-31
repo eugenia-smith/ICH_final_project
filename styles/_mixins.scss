@@ -36,7 +36,7 @@
 }
 
 @mixin links {
-  font-size: $regular_text;
+  @include adaptive_font-size(16, 10);
   font-weight: 500;
   color: $main_teal;
 }

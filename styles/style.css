@@ -670,10 +670,19 @@ a {
   border: none;
 }
 .section_header a {
-  font-size: 16px;
   font-weight: 500;
   color: #00798a;
   margin-left: auto;
+}
+@media (max-width: 767px) {
+  .section_header a {
+    font-size: calc(10px + 10.2 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .section_header a {
+    font-size: calc(10px + 6 * 0.0657894737vw);
+  }
 }
 
 .events_container {
@@ -1017,9 +1026,18 @@ a {
   line-height: 130%;
 }
 .principles_container .principle .principle_info .info_link {
-  font-size: 16px;
   font-weight: 500;
   color: #00798a;
+}
+@media (max-width: 767px) {
+  .principles_container .principle .principle_info .info_link {
+    font-size: calc(10px + 10.2 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .principles_container .principle .principle_info .info_link {
+    font-size: calc(10px + 6 * 0.0657894737vw);
+  }
 }
 @media (max-width: 960px) {
   .principles_container .principle {
@@ -1048,11 +1066,16 @@ a {
 .section_description {
   width: 75%;
 }
+@media (max-width: 767px) {
+  .section_description {
+    width: 100%;
+  }
+}
 
 .friendship_activities {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(376px, 1fr));
+  grid-gap: 2vw;
 }
 .friendship_activities .activity {
   display: flex;
@@ -1063,19 +1086,47 @@ a {
   gap: 16px;
 }
 .friendship_activities .activity .activity_title {
-  font-size: 18px;
   font-weight: 600;
   line-height: 150%;
 }
+@media (max-width: 767px) {
+  .friendship_activities .activity .activity_title {
+    font-size: calc(16px + 3.4 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .friendship_activities .activity .activity_title {
+    font-size: calc(16px + 2 * 0.0657894737vw);
+  }
+}
 .friendship_activities .activity .activity_info {
-  line-height: 150%;
   color: #707070;
+  line-height: 150%;
+}
+@media (max-width: 767px) {
+  .friendship_activities .activity .activity_info {
+    font-size: calc(10px + 10.2 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .friendship_activities .activity .activity_info {
+    font-size: calc(10px + 6 * 0.0657894737vw);
+  }
 }
 .friendship_activities .activity .activity_link {
-  font-size: 16px;
   font-weight: 500;
   color: #00798a;
   font-weight: 400;
+}
+@media (max-width: 767px) {
+  .friendship_activities .activity .activity_link {
+    font-size: calc(10px + 10.2 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .friendship_activities .activity .activity_link {
+    font-size: calc(10px + 6 * 0.0657894737vw);
+  }
 }
 
 .page_footer {
@@ -1294,10 +1345,19 @@ a {
 }
 
 .events_filter_link {
-  font-size: 16px;
   font-weight: 500;
   color: #00798a;
   text-decoration: underline;
+}
+@media (max-width: 767px) {
+  .events_filter_link {
+    font-size: calc(10px + 10.2 * (100vw - 393px) / 1520);
+  }
+}
+@media (min-width: 768px) {
+  .events_filter_link {
+    font-size: calc(10px + 6 * 0.0657894737vw);
+  }
 }
 
 .filters {
