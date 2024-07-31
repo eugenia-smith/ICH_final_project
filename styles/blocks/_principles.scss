@@ -4,14 +4,14 @@
 
 .principles_container {
   @include flex-container(row, space-between, center);
-  min-height: 180px;
-  background-color: $section_bg;
 
   .principle {
-    @include flex-container(row, start, start);
+    @include flex-container_centered;
     gap: 24px;
     padding: 24px 32px;
-    min-height: 124px;
+    min-height: 180px;
+    width: calc(50% - 16px);
+    background-color: $section_bg;
 
     .principle_info {
       @include flex-container(column, start, start);
@@ -27,5 +27,14 @@
         @include links;
       }
     }
+
+    @media (max-width: 960px) {
+      width: 100%;
+    }
+  }
+  @media (max-width: 960px) {
+    @include flex-container_centered;
+    flex-wrap: wrap;
+    gap: 16px;
   }
 }

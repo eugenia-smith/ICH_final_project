@@ -993,18 +993,15 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 180px;
-  background-color: rgba(151, 202, 209, 0.08);
 }
 .principles_container .principle {
   display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: start;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 24px;
   padding: 24px 32px;
-  min-height: 124px;
+  min-height: 180px;
+  width: calc(50% - 16px);
+  background-color: rgba(151, 202, 209, 0.08);
 }
 .principles_container .principle .principle_info {
   display: flex;
@@ -1023,6 +1020,19 @@ a {
   font-size: 16px;
   font-weight: 500;
   color: #00798a;
+}
+@media (max-width: 960px) {
+  .principles_container .principle {
+    width: 100%;
+  }
+}
+@media (max-width: 960px) {
+  .principles_container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
 }
 
 .friendships {
