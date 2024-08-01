@@ -10,7 +10,7 @@
 
   width: 50%;
 
-  @media (max-width: 960px) {
+  @media (max-width: 1200px) {
     @include flex-container(column, center, center);
     margin-bottom: 16px;
 

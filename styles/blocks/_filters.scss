@@ -1,7 +1,5 @@
-.page_container {
+.main_container {
   @include flex_container(row-reverse, space-between, start);
-  margin: 64px auto;
-  width: 80vw;
 }
 
 .events_map {
@@ -59,6 +57,10 @@
       }
     }
   }
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .events_filter_link {
@@ -86,10 +88,19 @@
       }
     }
   }
+
+  @media (max-width: 1200px) {
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
 }
 
 .events_main {
   width: 50%;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
 }
 
 .search_results {
@@ -124,6 +135,11 @@
         height: 90px;
 
         border-radius: 8px;
+
+        @media (min-width: 393px) and (max-width: 767px) {
+          width: 98px;
+          height: 64px;
+        }
       }
     }
 
