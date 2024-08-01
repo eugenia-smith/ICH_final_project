@@ -109,6 +109,7 @@
 
     .search_input {
       width: 80vw;
+      border-radius: 0 8px 8px 0;
     }
 
     .search_container {
@@ -117,7 +118,7 @@
       }
 
       .search_button {
-        left: 0;
+        left: -36px;
         top: -18px;
       }
     }

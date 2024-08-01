@@ -115,6 +115,7 @@
     position: relative;
 
     padding-top: 16px;
+    width: 100%;
     min-height: 120px;
     border-top: 1px solid $main_lighter_grey;
 
@@ -127,6 +128,13 @@
       height: 20px;
 
       background-image: url(../../assets/icons/online_event.png);
+
+      @media (min-width: 393px) and (max-width: 767px) {
+        width: 75px;
+        height: 15px;
+
+        background-size: contain;
+      }
     }
 
     picture {

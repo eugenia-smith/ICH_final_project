@@ -519,12 +519,13 @@ a {
   }
   .header_search .search_input {
     width: 80vw;
+    border-radius: 0 8px 8px 0;
   }
   .header_search .search_container .search_location {
     display: none;
   }
   .header_search .search_container .search_button {
-    left: 0;
+    left: -36px;
     top: -18px;
   }
 }
@@ -1484,6 +1485,7 @@ a {
   gap: 12px;
   position: relative;
   padding-top: 16px;
+  width: 100%;
   min-height: 120px;
   border-top: 1px solid #d9d9d9;
 }
@@ -1494,6 +1496,13 @@ a {
   width: 105px;
   height: 20px;
   background-image: url(../../assets/icons/online_event.png);
+}
+@media (min-width: 393px) and (max-width: 767px) {
+  .search_results article .online_mark {
+    width: 75px;
+    height: 15px;
+    background-size: contain;
+  }
 }
 .search_results article picture img {
   width: 160px;
