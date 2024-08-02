@@ -20,7 +20,7 @@ a {
   @include flex-container(column, start, start);
   gap: 64px;
 
-  max-width: 1520px;
+  width: 80vw;
   margin: 64px auto;
 
   @media (max-width: 1200px) {
